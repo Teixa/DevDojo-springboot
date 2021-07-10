@@ -3,6 +3,7 @@ package academy.devdojo.springboot2.domain;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,6 +20,8 @@ import javax.persistence.Id;
 @NoArgsConstructor
 //precisa ser uma entidade
 @Entity
+//?
+@Builder
 public class Anime {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
