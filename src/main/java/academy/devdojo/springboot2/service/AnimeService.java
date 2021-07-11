@@ -19,8 +19,13 @@ public class AnimeService {
    // old static { animes = new ArrayList<>(List.of(new Anime(1L,"Boku No Hero"), new Anime(2L,"Berserk"))); }
 
     private final AnimeRepository animeRepository;
+
     public List<Anime> listAll(){
         return animeRepository.findAll();
+    }
+
+    public List<Anime> findByName(String name) {
+        return animeRepository.findByName(name);
     }
 
     public Anime findByIdOrThrowBadRequestException(long id){
