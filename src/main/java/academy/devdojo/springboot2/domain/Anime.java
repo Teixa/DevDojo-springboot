@@ -20,7 +20,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 //precisa ser uma entidade
 @Entity
-//?
+//possibilita criar os objetos por meio do Stringbuilder .buil()
 @Builder
 public class Anime {
     @Id
